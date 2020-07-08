@@ -8,10 +8,10 @@ projectName="$1"
 echo "$projectname"
 scriptPath="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
-mkdir $projectName
-cp $scriptPath/index.html $projectName
-cp $scriptPath/style.css $projectName
-cp $scriptPath/app.js $projectName
+mkdir -p $projectName/src
+cp $scriptPath/index.html $projectName/src
+cp $scriptPath/style.css $projectName/src
+cp $scriptPath/app.js $projectName/src
 
 echo "web standards project $projectname created."
 exit 0
