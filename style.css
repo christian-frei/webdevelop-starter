@@ -32,21 +32,21 @@ main {
 }
 
 header {
-    background: lightblue;
+    background: rgb(224, 243, 250);
     grid-area: header;
 }
 
 footer {
-    background: lightcoral;
+    background: rgb(238, 213, 213);
     grid-area: footer;
 }
 
 section {
-    background: lightgreen;
+    background: rgb(192, 241, 192);
     grid-area: section;
 }
 
 nav {
-    background: yellow;
+    background: rgb(240, 240, 189);
     grid-area: nav;
 }
