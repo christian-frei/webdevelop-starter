@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    padding: 0px;
 }
 
 main {
@@ -12,11 +13,7 @@ main {
     main {
         grid-template-rows: 1fr 2fr 4fr 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas: 
-        "header header"
-        "section section"
-        "nav nav"
-        "footer footer"
+        grid-template-areas: "header" "article" "nav" "footer"
     }
 }
 
@@ -24,10 +21,7 @@ main {
     main {
         grid-template-rows: 1fr 4fr 1fr;
         grid-template-columns: 1fr 4fr;
-        grid-template-areas: 
-        "header header"
-        "nav section"
-        "footer footer"
+        grid-template-areas: "header header" "nav article" "footer footer"
     }
 }
 
@@ -36,17 +30,17 @@ header {
     grid-area: header;
 }
 
-footer {
-    background: rgb(238, 213, 213);
-    grid-area: footer;
-}
-
-section {
+article {
     background: rgb(192, 241, 192);
-    grid-area: section;
+    grid-area: article;
 }
 
 nav {
     background: rgb(240, 240, 189);
     grid-area: nav;
+}
+
+footer {
+    background: rgb(238, 213, 213);
+    grid-area: footer;
 }
